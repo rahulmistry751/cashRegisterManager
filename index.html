@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cash Register</title>
+</head>
+<body>
+    <div class="container">
+    <h2> Cash Register Manager</h2>
+    <form>
+        <label><h3>Bill amount</h3></label>
+        <input type="number" placeholder="Enter bill amount" min="1" id="bill-am" required>
+        <div class="warning"></div>
+        <button id="next-btn" type="submit">Next</button>
+        <div class="paid-section">
+    <label><h3>Paid amount</h3></label>
+    <input required type="number" min="1" id="paid-am" >
+    <button type="submit" id="check-btn">Check</button>
+    </div>
+    
+</form>
+    <div class="ret-am-container">
+        <p class="return-am"></p>
+    
+    </div>
+    <table>
+        <tr>
+          <th>Note</th>
+          <td>2000</td>
+          <td>500</td>
+          <td>100</td>
+          <td>20</td>
+          <td>10</td>
+          <td>5</td>
+          <td>1</td>
+        </tr>
+        <tr >
+          <th>No of Notes</th>
+          <td class="numOfNotes"></td>
+          <td class="numOfNotes"></td>
+          <td class="numOfNotes"></td>
+          <td class="numOfNotes"></td>
+          <td class="numOfNotes"></td>
+          <td class="numOfNotes"></td>
+          <td class="numOfNotes"></td>
+          
+        </tr>
+      </table>
+      <footer id="footer">
+        <ul>
+        <li class="links"><a href="https://github.com/rahulmistry751"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        <li class="links"><a href="https://www.linkedin.com/in/rahul-mistry-xl/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li class="links"><a href="https://rahul-folio.netlify.app/"><i class="fa fa-briefcase" aria-hidden="true"></i></a></li>
+    </ul>
+    </footer>
+    </div>
+    
+<script src="app.js"></script>
+</body>
+</html>
