@@ -13,6 +13,7 @@ let paid=0;let bill=0;
 checkBtn.addEventListener("click",(e)=>{
     e.preventDefault();
     paid=Number(paidAmount.value);
+    bill=Number(billAmount.value);
     //console.log(paid);
     if(!paid){ // checks if paid amount is entered
         returnAmount.style.color="red";
@@ -62,9 +63,8 @@ function calculateChange(paid,bill){
     for(i=0;i<notes.length;i++){
         if(temp>=notes[i]){    // Checks for notes smaller than the change value
             // Saves the number of notes needs for a particular note
-            console.log(temp);
             numOfNotes[i].innerText=Math.floor(temp/notes[i]);   
-            if(Math.floor(temp/notes[i])===0){  //Checks if change is settled
+            if(Math.floor(temp%notes[i])===0){  //Checks if change is settled
                 break;
             }
             else{
